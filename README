@@ -1,0 +1,39 @@
+hippo-Memory Cache Server (Daemon)
+
+hippo is a very small memory cache server, It run from daemon. It is similar to memcachd, and fully compatible with the memcached communication protocol can be easily carried from the memcached to hippo transplant. hippo is based on the thread to run, the faster the speed.
+
+ hippo including
+  *  compile tools is Cygwin
+  *  select event IO multiplex access client's request
+  *  multi thread handle client's request
+  *  Based memory data storage
+  *  Compatible memcached communication protocol
+  *  Few operation interface, The use of simple 
+  *  Support custom port,max_clients,memory use control
+  *  ...
+
+See the manual entry for more details.
+
+Files in this distribution:
+
+    README		help file
+    Makefile		make compile file
+    hippo.c		main source file
+    hippo.h		mail header file
+    anet.c		network source file
+    anet.h		network header file
+    event.c		event source file
+    event.h		event header file
+    hash.c		storage source file
+    hash.h		storage header file
+    util.c		tools source file
+    util.h		tools header file
+    command.c		command source file
+    command.h		command header file
+
+To build: If you're on a SysV-like machine (which includes old Linux systems
+but not new Linux systems), edit the Makefile and uncomment the SYSVLIBS line.
+Otherwise, just do a make.
+
+project http://code.google.com/p/heavenmvc/
+
